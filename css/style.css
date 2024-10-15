@@ -1,0 +1,821 @@
+/*================font link css part starts===================
+========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*================font link css part end===================
+========================================================= */
+
+/*================common css part starts===================
+========================================================= */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+#main_nav{
+    padding-top: 25PX;
+    position: absolute;
+    width: 100%;
+}
+.container{
+    width: 1320px;
+    margin:0 auto;
+}
+img{
+    width:100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/*================ var part starts===================
+========================================================= */
+:root{
+    --ibm:"IBM Plex Sans", sans-serif;
+    --brand_color:#FF9600;
+    --yello_font:"Yellowtail", cursive;
+    --inter:"Inter", sans-serif;
+}
+/*================var part end===================
+========================================================= */
+
+/*================common css part end===================
+========================================================= */
+
+/*================nav css part starts===================
+========================================================= */
+.nav_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_row .logo a img{
+    width: 225px;
+}
+.menu_part ul{
+    display: flex;
+    gap:53px;
+}
+.menu_part ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    font-family: var(--ibm);
+    transition: all linear 0.3s;
+}
+.menu_part ul li a:hover{
+    color: var(--brand_color);
+}
+
+/* ===============drop 01======================== */
+.menu_part ul li{
+    position: relative;
+}
+.menu_part ul li:hover ul{
+    left: 0px;
+}
+.menu_part ul li ul{
+    position: absolute;
+    width: 300px;
+    background:#000000;
+    border-radius: 5px;
+   flex-direction: column;
+   display: block;
+   right: -5000px;
+   transition:all linear 0.3s;
+}
+.menu_part ul li ul li a{
+    margin: 5px;
+}
+/* ===================01 end==================== */
+/* ====================02=================== */
+/* .menu_part ul li ul li{
+    position: relative;
+}
+.menu_part ul li ul li:hover ul{
+    left: 380px;
+    top:200px
+}
+.menu_part ul li ul li ul{
+    position: absolute;
+    width: 300px;
+    background:#ad0c0c;
+    border-radius: 5px;
+   flex-direction: column;
+   display: block;
+   right: -5000px;
+   transition:all linear 0.3s;
+   
+}
+.menu_part ul li ul li ul li a{
+    margin: 5px;
+} */
+/* ==============end 02========================= */
+
+/* ======================================= */
+.nav_button a{
+     padding: 20px 51px 21px;
+     background:#FFF;
+     font-size: 18px;
+     font-weight: 700;
+     font-family: var(--ibm);
+     color:#000000;
+     border-radius: 10px;
+     
+}
+.nav_button a:hover{
+     color:#FFF;
+     background:var(--brand_color)
+}
+/*================nav css part end===================
+========================================================= */
+/*================banner part starts===================
+========================================================= */
+#banner{
+    background:url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 240PX;
+    padding-bottom: 212PX;
+
+}
+.banner_text h2{
+    width: 819px;
+    font-family: var(--ibm);
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+.button_banner{
+    display: flex;
+    gap:57px;
+    margin-top: 48px;
+    justify-content: center;
+}
+.button_banner .button01 a{
+    padding: 20px 40px 20px 40px;
+    background:#FFF;
+    border-radius: 10px;
+    font-family: var(--ibm);
+    font-size: 18;
+    color:#000000;
+    transition: all linear 0.3s;
+}
+.button_banner .button01 a:hover{
+    background: var(--brand_color);
+    color: #FFF;
+}
+.button_banner .button02 a{
+    padding: 20px 40px 20px 40px;
+    background:#fff;
+    border-radius: 10px;
+    font-family: var(--ibm);
+    font-size: 18;
+    color:#000000;
+    transition: all linear 0.3s;
+}
+.button_banner .button02 a:hover{
+    background: var(--brand_color);
+    color: #FFF;
+}
+
+/*================banner part end===================
+========================================================= */
+
+/*================advanture part starts===================
+========================================================= */
+#main_advanture{
+    padding-top: 105px;
+}
+.advanture_row{
+    display: flex;
+    justify-content: space-between;
+}
+.common_head  h2{
+    font-family: var(--yello_font);
+    font-size:30px;
+    font-weight: normal;
+    color: #49C4F5;
+    width: 203PX;
+    margin-bottom: 4px;
+}
+.common_head  h3{
+    font-family:var(--ibm);
+    font-size:54px;
+    font-weight:700;
+    color:#222222;
+    width:598PX;
+    margin-bottom: 29px;
+}
+.common_head{
+    position: relative;
+}
+.common_head::after{
+    content: "";
+    width: 83px;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+}
+.advanture_row .advanture_text p{
+    font-family: var(--ibm);
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    width: 597px;
+    margin-top: 68px;
+    margin-bottom: 33px;
+}
+.advanture_text .advanture_text_option{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.advanture_text .advanture_text_option .option{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.advanture_text .advanture_text_option .option span{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #C4C4C4;
+    display: inline-block;
+}
+.advanture_text .option p{
+    font-family: var(--ibm);
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    width: 417px;
+    margin: 0px;
+}
+.advanture_button a{
+    width: 199px;
+    height: 62px;
+    background:#FF9600;
+    border-radius: 8px;
+    font-family: var(--ibm);
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 44px;
+    transition: all linear 0.3s;
+}
+.advanture_button a:hover{
+    background: #FFFFFF;
+    color:#000000 ;
+}
+/* ========================================= */
+
+.advanture_img01{
+    width: 299px;
+    height: 620px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.advanture_img02{
+    width: 294px;
+    height: 511px;
+}
+/* ========================================= */
+.counter{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:100px;
+}
+.counter_text{
+    width: 312px;
+    background: #FFF4E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.counter .ad_bg_2{
+    background: #E7FDE9;
+}
+.counter .ad_bg_3{
+    background: #F2F2FD;
+}
+.counter .ad_bg_4{
+    background: #FFF4E5;
+}
+.counter h4{
+    font-family: var(--ibm);
+    font-weight: 700;
+    font-size: 80px;
+    color: #000000;
+}
+.counter_text p{
+    font-family: var(--ibm);
+    font-weight:400;
+    font-size: 18px;
+    color: #000000;
+}
+/*================advanture part end===================
+========================================================= */
+/*================sport  part start===================
+========================================================= */
+#sport{
+    padding-top: 110px;
+    background: #0C3543;
+}
+.sport_head .common_head{
+    position: relative;
+}
+.sport_head .common_head::after{
+    content: "";
+    width: 83px;
+    height: 1px;
+    background: #FFF;
+    position: absolute;
+}
+.sport_head .common_head h2{
+    color: #FF960B;
+}
+.sport_head .common_head h3{
+    color: #FFFFFF;
+}
+.sport_head .common_text p{
+    font-size: 400;
+    font-size:18px;
+    font-family:var(--ibm);
+    color: #FFF;
+}
+.sport_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ----------------------------------- */
+.sports_cards_row{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap:50px;
+    column-gap: 24px;
+    margin-top: 99px;
+}
+.sports_cards_row .sports_single_card{
+    width: 424px;
+    border-radius: 15px;
+}
+.sports_single_card .sports_text{
+    padding-top: 37px;
+    padding-bottom: 40px;
+    background: #0F4152;
+}
+.sports_single_card .sports_text h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--inter);
+    color: #fff;
+    text-align: center;
+}
+.sports_single_card .sports_text p{
+    font-size: 18px;
+    font-weight:400;
+    font-family: var(--inter);
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 15px;
+}
+.sports_single_card .sports_text:hover h2{
+    color: #FF9600;
+    transition: all linear 0.3s;
+}
+.sports_card_image{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.sports_card_image img{
+    transition: all linear 0.3s;
+}
+.sports_card_image:hover img{
+    transform:scale(1.1);
+}
+/* ------------------------------------------- */
+.sport_bg_image{
+    margin-top: 117px;  
+}
+
+
+/*================sport part end===================
+========================================================= */
+
+/*================sports video part starts===================
+========================================================= */
+#sports_video{
+    padding-top: 30px;
+    padding-bottom: 495px;
+    background: var(--brand_color);
+}
+.sports_video_logo{
+    text-align: center;
+}
+.sports_video_logo img{
+    width: 103px;
+}
+.sport_video_head h2{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 50px;
+}
+.sport_video_head p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 56px;
+}
+/* ---------------------------- */
+.sport_button{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+.sport_button .button_1 a{
+    padding: 23px 43px;
+    background:#0C3543;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color:#FFFFFF;
+    border-radius: 10px;   
+}
+.sport_button .button_2 a{
+    padding: 23px 43px;
+    background:#0C3543;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color:#FFFFFF;
+    border-radius: 10px;   
+}
+/* ---------------------------- */
+.sports_video_card_row .sports_video_card{
+    width: 395px;
+    height: 447px;
+    border-radius: 15px;
+    background:url(../images/video_image_1.png);
+    padding-left: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+}
+.sports_video_card_row{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:4300px;
+}
+.sports_video_card span{
+    width: 260px;
+    height: 3px;
+    background: #C4C4C4;
+    display:inline-block;
+
+}
+
+.sports_video_card h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+    
+}
+.sports_video_card h3{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+    margin-top: 27px;
+    margin-bottom: 38px;
+}
+.sports_video_card p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+.sports_video_container{
+    position: relative;
+}
+/*================sports video part starts===================
+========================================================= */
+
+/*================ team part start===================
+========================================================= */
+.bg_team{
+    padding-top: 239px;
+    padding-bottom: 230px;
+}
+.team_text{
+    text-align: center;
+}
+.team_text h2{
+    width: 224px;
+    font-family: var(--yello_font);
+    font-size: 30px;
+    font-weight: 400;
+    color: #14B9F1;
+    margin-bottom: 29px;
+    margin: 0 auto;
+    text-align: center;
+}
+.team_text h3{
+    width: 217px;
+    font-family:var(--ibm);
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 29px;
+}
+.team_text span{
+    width: 100px;
+    height: 2px;
+    background: #A0A0A0;
+    display: inline-block;
+    
+}
+
+/* ------------------------ */
+.single_logo_card{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 81px;
+}
+/* ------------------------ */
+.team_card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.single_team_card h4{
+    width: 250px;
+    font-family:var(--ibm);
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.single_team_card p{
+    width: 275px;
+    font-family:var(--ibm);
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 81px;
+}
+
+/*================ team part end===================
+========================================================= */
+
+/*================ news sports start===================
+========================================================= */
+/* .bg_news_sport{
+    
+} */
+.news_sports_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_part h2{
+    width: 200px;
+    font-family:var(--yello_font);
+    font-size: 30px;
+    font-weight: 400;
+    color: #FF9600;
+}
+.left_part h3{
+    width:407px;
+    font-family:var(--ibm);
+    font-size: 54px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 3px;
+    margin-bottom: 25px;
+}
+.left_part span{
+    width: 100px;
+    height: 2px;
+    background: #A0A0A0;
+    display: inline-block; 
+    margin-bottom: 86px;
+}
+.right_part p{
+    width:619px;
+    font-family:var(--ibm);
+    font-size:18px;
+    font-weight: 400;
+    color: #000000;
+}
+/* --------------------------------- */
+.news_header_row{
+    display: flex;
+    justify-content: space-between;
+}
+.news_card_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.news_part_single_card{
+    width: 424px;
+    background: r;
+}
+.news_card_image{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.news_card_text{
+    padding-top: 32px;
+    padding-bottom: 86px;
+}
+.news_card_text h2{
+    width:315px;
+    font-family:var(--ibm);
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 38px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.news_card_text p{
+    width:312px;
+    font-family:var(--ibm);
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 42px;
+    text-align: center;
+}
+.news_card_text span{
+    width: 424px;
+    height: 1px;
+    background: #000000;
+    display: inline-block;
+    
+}
+.news_card_text a{
+    width:104px;
+    font-family:var(--ibm);
+    font-size: 18px;
+    font-weight: 700;
+    color: #14B9F1;
+    margin-top: 42px;
+    text-align: center;
+}
+
+/*================ news sports end===================
+========================================================= */
+/*================ logo image starts===================
+========================================================= */
+#logo_img{
+    padding-top: 265px;
+    padding-bottom: 42px;
+}
+.logo_img_row img{
+    width: 160px;
+}
+.logo_img_main{
+    display: flex;
+    justify-content: space-between;
+}
+/*================ logo image end===================
+========================================================= */
+
+/*================ footer part start===================
+========================================================= */
+#main_footer{
+    background: #0C3543;
+    padding-top: 80px;
+    padding-bottom: 119px;
+    position: relative;
+}
+.footer_content{
+    display: flex;
+    justify-content: end;
+}
+.footer_all_text{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+}
+.footer_all_text .footer_logo img{
+    width: 252px;
+}
+.footer_club{
+    display: flex;
+    margin-top: 80px;
+    gap: 33px;
+}
+.footer_club a{
+    padding: 20px 29px;
+    height: 70px;
+    text-align: center;
+    background: #FF9600;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+}
+.footer_club p{
+    width: 373px;
+    font-size: 18px;
+    font-weight:400;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+}
+.footer_all_text span{
+    width:536px;
+    height: 2px;
+    background: #C4C4C4;
+    margin-top: 52px;
+    margin-bottom: 73px;
+    display: inline-block;
+}
+/* ------------------------------ */
+.footer_contact{
+    display: flex;
+    gap: 30px;
+}
+.footer_contact_head h2{
+    width:153px;
+    font-size: 30px;
+    font-weight:700;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+}  
+.footer_contact_under p{
+    width:354px;
+    font-size: 18px;
+    font-weight:400;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+}
+.footer_contact_under a{
+    width:354px;
+    font-size: 18px;
+    font-weight:400;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+    display: block;
+}
+.footer_contact_under .contact1{
+    margin: 32px 0;
+}
+.licence{
+    width: 498px;
+    font-size: 18px;
+    font-weight:400;
+    font-family: var(--ibm);
+    color: #FFFFFF;
+    margin-top: 62px;
+}
+
+.footer_main_image{
+    position: absolute;
+    top: 0;
+    left:-44px;
+}
+.footer_main_image img{
+    width: 800px;
+    height: 790px;
+}
+/*================ footer part end===================
+========================================================= */
